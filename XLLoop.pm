@@ -244,7 +244,6 @@ my $XL_ERROR_NA    = 42;
 
         no strict;
         my @methods = grep { *{$package."::$_"}{CODE}  } keys %{$package.'::'};
-        use Data::Dump;
         foreach my $m (@methods) {
             ${$self->_methods}{$namespace.$m} = *{$package."::$m"}{CODE};
         }
