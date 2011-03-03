@@ -14,7 +14,6 @@ use XLLoop;
         my ($self, $context, $name, $args) = @_;
         given ($name) {
             when ('ArgsTest') {
-                say "ArgsTest Called";
                 return $args;
             }
             when ('ReturnTest') {
