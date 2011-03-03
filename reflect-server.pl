@@ -14,6 +14,7 @@ use XLLoop;
     # MyFuncs.somefunc(1,2) will send arguments as [1,2]
     # IF you send a range of cells
     # MyFuncs.somefunc(B1) will send arguments as [B1]
+    # MyFuncs.somefunc(B1:B3) will send arguments as [[B1,B2,B3]]
     # MyFuncs.somefunc(B1:D1) will send arguments as [[[B1,C1,D1]]]
     # MyFuncs.somefunc(B1:D3) will send arguments as [[[B1,C1,D1], [B2,C2,D2], [B3,C3,D3]]]
     sub sum_two {
