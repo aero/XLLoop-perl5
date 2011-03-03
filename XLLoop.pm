@@ -334,7 +334,7 @@ my $XL_ERROR_NA    = 42;
 
     sub stop {
         my ($self) = @_;
-        undef $self->_server->shutdown;
+        $self->_server->shutdown;
     }
 }
 
