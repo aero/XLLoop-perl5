@@ -8,7 +8,7 @@ use XLLoop;
     package TestHandler;
     use Any::Moose;
 
-    has _functionInfo => (is => 'ro', isa => 'ArrayRef', default => \&createFunctionInfo);
+    has _functionInfo => (is => 'ro', isa => 'ArrayRef', default => \&_createFunctionInfo);
 
     sub invoke {
         my ($self, $context, $name, $args) = @_;
@@ -34,7 +34,7 @@ use XLLoop;
         }
     }
 
-    sub createFunctionInfo {
+    sub _createFunctionInfo {
         my $a = [];
         push @$a, FunctionInformation->new( name=>'ArgsTest', help=>'This is a args test')->getinfo;
         my $f1 = FunctionInformation->new( name=>'MyTest', help=>'This is a dummy test');
