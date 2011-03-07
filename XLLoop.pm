@@ -28,7 +28,7 @@ my $XL_ERROR_NA    = 42;
     package XLError;
     use Any::Moose;
 
-    has err => (is => 'ro', isa => 'Str');
+    has err => (is => 'ro', isa => 'Int');
 }
 
 {
