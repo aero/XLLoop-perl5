@@ -326,7 +326,7 @@ my $XL_ERROR_NA    = 42;
                 } catch {
                     carp "Error. $_\n";
                     close $fh;
-                }
+                };
             }
         }
     }
